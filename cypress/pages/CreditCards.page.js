@@ -10,9 +10,9 @@ export function checkHeader() {
 }
 
 export function clickCashbackChoice() {
-    cy.get('[data-cy=CardChoice]')
-        .eq(1)
-        .find('[data-cy=FindOutMore]')
+    cy.get('[data-cy=CardUnavailable]')
+        .eq(0)
+        .find('[data-cy=GetEarlyAccess]')
         .click()
 }
 

@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://public-staging.tandem.ninja/",
+    "baseUrl": "https://public-staging.tandem.ninja",
     "env": {
         "staging": "staging"
     }

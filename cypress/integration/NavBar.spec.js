@@ -1,29 +1,19 @@
 import * as navbar from '../pages/NavBar.page'
 import * as home from '../pages/Home.page'
-import * as getAppModal from '../pages/GetAppModal.page'
-import * as theApp from '../pages/TheApp.page'
+import * as getTheApp from '../pages/GetTheApp.page'
 import * as creditCards from '../pages/CreditCards.page'
 import * as fixerSavers from '../pages/FixedSavers.page'
 import * as blog from '../pages/Blog.page'
 
 describe('== NAVBAR ==', () => {
     describe('Given I am on the Tandem Website', () => {
-        before(() => {
-            cy.visit(Cypress.config().baseUrl)
-            cy.get('.tandem-logo').should('be.visible')
-        })
-
-        describe('When I click on The App link', () => {
-            before(() => {
-                navbar.clickTheApp()
-            })
-            it('Then I should navigate to The App page', () => {
-                theApp.checkImAtTheAppPage()
-            })
+        beforeEach(() => {
+            cy.visit('/')
+            cy.get(navbar.logo).should('be.visible')
         })
 
         describe('When I click on Credits Cards link', () => {
-            before(() => {
+            beforeEach(() => {
                 navbar.clickCreditCards()
             })
 
@@ -33,7 +23,7 @@ describe('== NAVBAR ==', () => {
         })
 
         describe('When I click on Fixed Savers link', () => {
-            before(() => {
+            beforeEach(() => {
                 navbar.clickFixedSavers()
             })
             it('Then I should navigate to Fixed Savers page', () => {
@@ -42,7 +32,7 @@ describe('== NAVBAR ==', () => {
         })
 
         describe('When I click on Blog link', () => {
-            before(() => {
+            beforeEach(() => {
                 navbar.clickBlog()
             })
             it('Then I should navigate to Fixed Savers page', () => {
@@ -52,34 +42,35 @@ describe('== NAVBAR ==', () => {
     })
 
     describe('Given I am on The Blog page', () => {
-        before(() => {
-            cy.visit(Cypress.config().baseUrl + 'blog')
+        beforeEach(() => {
+            cy.visit('/blog')
+            cy.get(navbar.logo).should('be.visible')
         })
 
         describe('When I click on Home link', () => {
-            before(() => {
+            beforeEach(() => {
                 navbar.clickHome()
             })
-            it('Then I should navigate to Home Page page', () => {
+            it('Then I should navigate to Home page', () => {
                 home.checkImAtHomePage()
             })
         })
 
         describe('When I click at the Logo', () => {
-            before(() => {
+            beforeEach(() => {
                 navbar.clickLogo()
             })
-            it('Then I should navigate to Home Page page', () => {
+            it('Then I should navigate to Home page', () => {
                 home.checkImAtHomePage()
             })
         })
 
         describe('When I click on Get The App button', () => {
-            before(() => {
+            beforeEach(() => {
                 navbar.clickGetTheApp()
             })
-            it('Then I should see Get The Tandem App modal', () => {
-                getAppModal.isOpenAndVisible()
+            it('Then I should see the Download The Free Tandem App modal', () => {
+                getTheApp.isOpenAndVisible()
             })
         })
     })

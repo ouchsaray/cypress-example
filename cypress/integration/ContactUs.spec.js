@@ -2,7 +2,7 @@ import * as contactUs from '../pages/ContactUs.page'
 
 describe('== Contact Us ==', () => {
     beforeEach(() => {
-        cy.visit(Cypress.config().baseUrl + 'contact-us')
+        cy.visit('/contact-us')
     })
 
     describe('Given I am on the contact us page', () => {

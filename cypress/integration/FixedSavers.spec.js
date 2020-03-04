@@ -2,8 +2,9 @@ import * as fixedSaver from '../pages/FixedSavers.page'
 
 describe('== Fixed Savers ==', () => {
     beforeEach(() => {
-        cy.visit(Cypress.config().baseUrl + 'fixed-saver')
+        cy.visit('/fixed-saver')
     })
+
     describe('Given I am on the fixed savers page', () => {
         it('Then I should see the appropriate header and info', () => {
             fixedSaver.checkImAtFixedSaversPage()

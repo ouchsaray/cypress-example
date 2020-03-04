@@ -27,5 +27,11 @@ var getConfigurationByFile = file => {
 module.exports = (on, config) => {
     const file = config.env.configFile || 'staging'
 
+    on('task', {
+        log(message) {
+            console.log(message) //eslint-disable-line no-console
+            return null
+        },
+    })
     return getConfigurationByFile(file)
 }

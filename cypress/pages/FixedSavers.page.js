@@ -6,11 +6,11 @@ const fixedSaverOptionsLabel = '[data-cy=fixedSaverOptionLabel]'
 const paragraphText = '[data-cy=paragraphText]'
 const sendApplicationButton = '[data-cy=CTAButton]'
 const oneYearSaverText =
-    'The interest earned on a balance of £1,000 after 12 months will be £20.00, the interest will be paid to your linked current account on an annual basis.'
+    'The interest earned on a balance of £1,000 after 12 months will be £12.50, the interest will be paid to your linked current account on an annual basis.'
 const twoYearSaverText =
-    'The interest earned on a balance of £1,000 after 24 months will be £46.00, the interest will be paid to your linked current account on an annual basis.'
+    'The interest earned on a balance of £1,000 after 24 months will be £27.00, the interest will be paid to your linked current account on an annual basis.'
 const threeYearSaverText =
-    'The interest earned on a balance of £1,000 after 36 months will be £72.00, the interest will be paid to your linked current account on an annual basis.'
+    'The interest earned on a balance of £1,000 after 36 months will be £43.50, the interest will be paid to your linked current account on an annual basis.'
 const oneYearURLParam = 'productCode=PromoFS1'
 const twoYearURLParam = 'productCode=PromoFS2'
 const threeYearURLParam = 'productCode=PromoFS3'

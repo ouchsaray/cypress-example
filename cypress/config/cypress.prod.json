@@ -1,0 +1,7 @@
+{
+    "baseUrl": "https://www.tandem.co.uk",
+    "env": {
+        "staging": "prod"
+    },
+    "blacklistHosts": ["www.google-analytics.com"]
+}

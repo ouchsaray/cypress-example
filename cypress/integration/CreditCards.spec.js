@@ -4,7 +4,7 @@ import * as journeyCard from '../pages/JourneyCard.page'
 
 describe('== Credit Cards ==', () => {
     beforeEach(() => {
-        cy.visit(Cypress.config().baseUrl + 'credit-cards')
+        cy.visit('/credit-cards')
     })
 
     describe('Given I am on the credit cards page', () => {

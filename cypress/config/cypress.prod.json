@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://www.tandem.co.uk",
+    "baseUrl": "",
     "env": {
         "staging": "prod"
     },

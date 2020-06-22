@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://public-dev.tandem.ninja",
+    "baseUrl": "",
     "env": {
         "dev": "dev"
     }
